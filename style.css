@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;;
 }
 
 :root {
@@ -190,8 +190,8 @@ h1{
     height: 10%;
     background-color: var(--inbloc-color);
     border-radius: 15px;
-
 }
+
 .text-img {
     display: flex;
     flex-wrap: wrap;
@@ -279,6 +279,7 @@ form{
 .groupe label{
     width: 20%;   
     color: var(--text-color);
+    font-size: 30px;
 }
 .groupe input{
     width: 100%;
@@ -304,6 +305,7 @@ form{
 }
 .groupe1 input{
     background-color: var(--bloc-color);
+    color: var(--white-color);
 }
 textarea{
     width: 100%;
@@ -447,6 +449,7 @@ button:hover{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        animation: fadeIn 3s;
     }
 
     .title {
@@ -480,6 +483,15 @@ button:hover{
     }
     .logo-desktop h2 {
         display: block;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     /* COMMENTAIRES */
