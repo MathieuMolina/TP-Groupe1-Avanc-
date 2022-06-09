@@ -14,16 +14,13 @@ body{
 }
 
 
-
 /* Navbar Responsive */
 header {
     width: 100%;
 }
 
-
-
 .navbar {
-    width: 100%;
+    width: auto;
     height: 50px;
     padding: 10px;
     background-color: var(--bloc-color);
@@ -35,8 +32,6 @@ header {
     display: none;
 }
 
-
-
 .sidenav {
     height: auto;
     width: 100%;
@@ -44,9 +39,8 @@ header {
     z-index: 1;
     top: -600px;
     right: 0;
-    background-color: #393E46;
-    transition: top 0.5s ease;
-
+    background-color: var(--bloc-color);
+    transition: top 0.5s ease
 }
 
  
@@ -99,6 +93,11 @@ header {
     
 }
   
+h1{
+    font-size: 40px;
+}
+
+
 /* Icône burger */
 
 #openBtn {
@@ -238,11 +237,12 @@ footer{
 .contact{
     padding: 0 5%;
 }
+
 h2{
+   display: none;
    text-align: center;
    color: var(--text-color);
    text-transform: uppercase;
-   
 }
 
 
@@ -311,6 +311,7 @@ textarea{
     padding: 2%;
     background-color: var(--bloc-color);
     border: 0;
+    color: var(--white-color);
 }
 .formEnd{
     height: 50px;
@@ -319,13 +320,14 @@ textarea{
     align-items: center;
 }
 button{
-    width: 20%;
+    width: 40%;
     height: 30px;
     border-radius: 10px;
     background-color: var(--text-color);
     border: none;
     color: var(--white-color);
 }
+
 button:hover{
     cursor: pointer;
 }
@@ -399,25 +401,35 @@ button:hover{
         height: 1500px;
         background-color: var(--bloc-color);
         position: fixed;
+        border-left : 5px solid var(--hover-color);
+        padding: 0;
+        margin: 0;
+        box-shadow:
+        0 0 7px var(--text-color),
+        0 0 7px var(--text-color),
+        0 0 10px var(--text-color),
+        0 0 42px var(--text-color),
+        0 0 10px var(--text-color),
+        0 0 10px var(--text-color),
+        0 0 10px var(--text-color),
+        0 0 10px var(--text-color);
     }
 
     .ancre {
         margin-top: 25%;
         width: 5%;
         height: auto;
-        background-color: var(--hover-color);
-        display: flex;
+        background-color: var(--text-color);
         position: fixed;
-        flex-direction: column;
-        align-items: center;
     }
 
     .ancre img {
         display: block;
         width: 50px;
-        margin: 35%;
-        height: auto;
         cursor: pointer;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
         transition: 500ms;
     }
     .ancre img:hover {
@@ -453,21 +465,20 @@ button:hover{
     .logo-desktop {
         width: 50%;
         height: 100%;
-        border: 3px solid var(--hover-color);
+        border: 3px solid #02D1FF;
         padding: 8px 4px 4px 4px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        color: var(--text-color);
+        color: #1B87D6;
         margin: 0 2%;
         font-size: 100px;
     }
-
     .logo-text-desktop {
         font-size: 300px;
     }
-    .logo-desktop h1 {
+    .logo-desktop h2 {
         display: block;
     }
 
